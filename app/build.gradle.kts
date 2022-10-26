@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.config.JvmAnalysisFlags.useIR
+
 plugins {
     id("com.android.application")
     kotlin("android")

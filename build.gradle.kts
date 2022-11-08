@@ -7,7 +7,7 @@ buildscript {
 
     val composeVersion by extra("1.3.0")
     val coroutinesVersion by extra("1.6.4")
-    val lifecycleVersion by extra("2.5.1")
+    val lifecycleVersion by extra("2.6.0-alpha03")
     val fragmentVersion by extra("1.5.4")
     val hiltVersion by extra("2.44")
     val retrofitVersion by extra("2.9.0")
@@ -22,7 +22,7 @@ buildscript {
 plugins {
     id("com.android.application").version("7.3.1") apply false
     id("com.android.library").version("7.3.1") apply false
-    id("org.jetbrains.kotlin.android").version("1.7.20") apply false
+    id("org.jetbrains.kotlin.android").version("1.7.10") apply false
     id("io.gitlab.arturbosch.detekt").version("1.22.0-RC2")
 }
 

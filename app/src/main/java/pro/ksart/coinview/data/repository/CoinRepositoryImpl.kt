@@ -1,5 +1,6 @@
 package pro.ksart.coinview.data.repository
 
+import android.util.Log
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import pro.ksart.coinview.data.remote.CoinPaprikaApiService
@@ -19,6 +20,7 @@ class CoinRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getCoinById(coinId: String): CoinDetailDto = withContext(dispatcher) {
+        Log.d("getCoinById", "coinId: $coinId")
         service.getCoinById(coinId)
     }
 }

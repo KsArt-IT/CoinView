@@ -10,9 +10,9 @@ interface CoinPaprikaApiService {
     @GET("/v1/coins")
     suspend fun getCoins(): List<CoinDto>
 
-    @GET("/v1/coins/{coin_id}")
+    @GET("/v1/coins/{$PARAM_COIN_ID}")
     suspend fun getCoinById(
-        @Path("coin_id") coinId: String
+        @Path(PARAM_COIN_ID) coinId: String
     ): CoinDetailDto
 
     companion object {

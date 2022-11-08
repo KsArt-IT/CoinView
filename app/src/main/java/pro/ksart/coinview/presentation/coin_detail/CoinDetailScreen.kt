@@ -22,8 +22,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import coil.compose.AsyncImage
 import com.google.accompanist.flowlayout.FlowRow
 import pro.ksart.coinview.presentation.coin_detail.components.CoinTag
 import pro.ksart.coinview.presentation.coin_detail.components.TeamListItem
@@ -44,10 +46,17 @@ fun CoinDetailScreen(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
+                        AsyncImage(
+                            model = coin.logo,
+                            contentDescription = null,
+                            modifier = Modifier
+                                .align(CenterVertically)
+                                .weight(1f)
+                        )
                         Text(
-                            text = "${coin.rank}. ${coin.name} (${coin.symbol})",
+                            text = " ${coin.rank}. ${coin.name} (${coin.symbol})",
                             style = MaterialTheme.typography.h2,
-                            modifier = Modifier.weight(8f)
+                            modifier = Modifier.weight(8f),
                         )
                         Text(
                             text = if (coin.isActive) "active" else "inactive",

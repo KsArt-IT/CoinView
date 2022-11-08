@@ -48,6 +48,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "33.0.0"
 }
 
 kapt {
@@ -109,9 +110,9 @@ dependencies {
     // RecyclerView
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     // DateTime
-    implementation("com.jakewharton.threetenabp:threetenabp:1.3.1")
+    implementation("com.jakewharton.threetenabp:threetenabp:1.4.3")
     // Coil
-    val coilVersion = "1.4.0"
+    val coilVersion = "2.2.2"
     implementation("io.coil-kt:coil-base:$coilVersion")
     implementation("io.coil-kt:coil:$coilVersion")
     // Paging3

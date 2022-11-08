@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import pro.ksart.coinview.data.Results
+import pro.ksart.coinview.domain.entities.Results
 import pro.ksart.coinview.domain.use_case.GetCoinsUseCase
 import javax.inject.Inject
 

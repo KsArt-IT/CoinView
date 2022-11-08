@@ -2,7 +2,7 @@ package pro.ksart.coinview.domain.use_case
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import pro.ksart.coinview.data.Results
+import pro.ksart.coinview.domain.entities.Results
 import pro.ksart.coinview.data.remote.dto.toCoin
 import pro.ksart.coinview.domain.entities.Coin
 import pro.ksart.coinview.domain.repository.CoinRepository

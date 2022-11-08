@@ -1,4 +1,4 @@
-package pro.ksart.coinview.data
+package pro.ksart.coinview.domain.entities
 
 sealed class Results<out T : Any> {
 

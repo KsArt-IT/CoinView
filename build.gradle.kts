@@ -6,22 +6,22 @@ buildscript {
     val nameVersion by extra("1.0")
 
     val composeVersion by extra("1.3.0")
-    val coroutinesVersion by extra("1.6.1")
+    val coroutinesVersion by extra("1.6.4")
     val lifecycleVersion by extra("2.5.1")
-    val fragmentVersion by extra("1.4.1")
-    val hiltVersion by extra("2.41")
+    val fragmentVersion by extra("1.5.4")
+    val hiltVersion by extra("2.44")
     val retrofitVersion by extra("2.9.0")
-    val moshiVersion by extra("1.13.0")
+    val moshiVersion by extra("1.14.0")
 
     dependencies {
         classpath("com.google.dagger:hilt-android-gradle-plugin:$hiltVersion")
-        classpath("com.android.tools.build:gradle:8.0.0-alpha06")
+        classpath("com.android.tools.build:gradle:7.3.1")
     }
 }
 
 plugins {
-    id("com.android.application").version("8.0.0-alpha06") apply false
-    id("com.android.library").version("8.0.0-alpha06") apply false
+    id("com.android.application").version("7.3.1") apply false
+    id("com.android.library").version("7.3.1") apply false
     id("org.jetbrains.kotlin.android").version("1.7.20") apply false
     id("io.gitlab.arturbosch.detekt").version("1.22.0-RC2")
 }
